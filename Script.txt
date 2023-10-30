@@ -1,0 +1,54 @@
+﻿new-project 500 500
+add-layer layer 255
+add-image-to-layer layer colllllllllage/code/tinytatum.jpg 30 50
+set-filter layer red-component
+add-layer layer2 128
+add-image-to-layer layer2 colllllllllage/code/tinytatum.ppm 100 200
+set-filter layer2 green-component
+save-image red-green-image.ppm
+save-project red-green.collage
+new-project 500 500
+add-layer layer 255
+add-image-to-layer layer colllllllllage/code/tinytatum.ppm 50 100
+set-filter layer blue-component
+add-layer layer2 128
+add-image-to-layer layer2 colllllllllage/code/tinytatum.ppm 0 0
+set-filter layer2 brighten-value
+save-image blue-brighten-value-image.jpg
+save-project blue-brighten-value.collage
+new-project 500 500
+add-layer layer 255
+add-image-to-layer layer colllllllllage/code/tinytatum.ppm 50 100
+set-filter layer brighten-luma
+add-layer layer2 128
+add-image-to-layer layer2 colllllllllage/code/tinytatum.jpg 30 50
+set-filter layer2 brighten-intensity
+save-image brighten-luma-intensity-image.jpg
+save-project brighten-luma-intensity.collage
+new-project 500 500
+add-layer layer 255
+add-image-to-layer layer colllllllllage/code/tinytatum.ppm 50 100
+set-filter layer darken-luma
+add-layer layer2 128
+add-image-to-layer layer2 colllllllllage/code/tinytatum.jpg 30 50
+set-filter layer2 darken-intensity
+add-layer layer3 100
+add-image-to-layer layer3 colllllllllage/code/tinytatum.png 0 0
+set-filter layer3 darken-value
+save-image all-darkened-image.jpg
+save-project all-darkened-filter.collage
+new-project 500 500
+add-layer layer 255
+add-image-to-layer layer colllllllllage/code/tinytatum.ppm 50 100
+set-filter layer inversion-blend
+add-layer layer2 128
+add-image-to-layer layer2 colllllllllage/code/tinytatum.jpg 30 50
+set-filter layer2 darken-blend
+add-layer layer3 100
+add-image-to-layer layer3 colllllllllage/code/tinytatum.png 0 0
+set-filter layer3 brighten-blend
+save-image all-blended-image.jpg
+save-project all-blended-filter.collage
+load-project all-blended-filter.collage
+save-image loadedimage.jpg
+q

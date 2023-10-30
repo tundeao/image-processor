@@ -1,0 +1,29 @@
+﻿GUI View Instructions
+* Run the main method in order to see the GUI or using the command line, enter: java -jar colllllllllage/code/res/collagewithgui.jar
+* Then click the New Project or Load Project button in order to create or load a project
+* Follow the instructions from the popups
+* Then press the Add Layer button and follow the instructions from the popups
+* Next select the text that is label Canvas and select whatever layer you named previously
+* Press the Add Image To Layer button and select a ppm image, then follow the instruction from the popups.
+* Press the set filter button and make sure that the layer name that you want a filter on is on the selection label. On the popup choose the filter you want.
+* Use the previous steps to add other layers, add images to layers and set filters on the new layers
+* When finished use the Save Image button to save the final image.
+* Then use the Save Project button to save the project.
+
+Text View Instructions:
+* Enter the following into the terminal command line: java -jar colllllllllage/code/res/collagewithgui.jar -text
+* Use the list of commands below to create and save your project:
+
+    List of Commands:
+    * new-project <height> <width>
+    * add-layer <layerName> <alphaValue>
+    * add-image-to-layer <layerName> <imagePath> <offsetXValue> <offsetYValue>
+    * set-filter <filterName>
+    * save-image <path>
+    * save-project <path>
+    * load-project <path>
+
+Script Instructions:
+* Enter the following into the terminal command line: java -jar colllllllllage/code/res/collagewithgui.jar -file Script.txt
+* The script will run and produce the pre-made files in the home folder
+

@@ -1,0 +1,23 @@
+Decoupling views:
+- For the views to compile, only the IPixel, ILayer, IProject, ViewImpl and GUIView files need to be sent.
+IPixel:
+- Methods of this interface such as getR(), getG() and getB() are used in the GUIView.
+ILayer:
+- The method getPixels() of the ILayer interface is used in the GUIView.
+IProject:
+- All methods of the IProject interface are used in the GUIView.
+ViewImpl:
+- The ViewImpl (TextUI) needs to access the IProject interface in order to create the text interface.
+GUIView:
+- The GUIView needs to access the other interfaces in order to create the view.
+
+Decoupling the controller:
+- For the views to compile, only the IController, IProject, View, ControllerImpl files need to be sent.
+IController:
+- IController is implemented by ControllerImpl.
+IProject:
+- All methods of the IProject interface are used in the ControllerImpl.
+View:
+- The method renderMessage is used in the ControllerImpl method writeMessage.
+ControllerImpl:
+- The ControllerImpl needs to access the IController, IProject and View interfaces in order to function properly.
